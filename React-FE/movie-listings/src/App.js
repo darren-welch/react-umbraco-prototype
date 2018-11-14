@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import BlogList from "./components/blogListing";
 import { getAccessToken } from "./shared/umbraco-api";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import PageTitle from "./components/pageTitle";
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
           <PageTitle data={this.state.content} />
           <div className="row">
             <div className="col text-center">
-              <h2 className="text-warning">Movie &amp; TV Reviews</h2>
+              <h2 className="text-warning mb-4">{this.state.content["movieListingsTitle"]}</h2>
               <BlogList data={this.state.content} />
             </div>
           </div>

@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "655cfdf3d763ddef")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "85e507f4809e56aa")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -50,12 +50,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Blogs
+		/// Movie Listings Title
 		///</summary>
-		[ImplementPropertyType("blogs")]
-		public IEnumerable<IPublishedContent> Blogs
+		[ImplementPropertyType("movieListingsTitle")]
+		public string MovieListingsTitle
 		{
-			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("blogs"); }
+			get { return this.GetPropertyValue<string>("movieListingsTitle"); }
 		}
 
 		///<summary>
@@ -164,12 +164,30 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Movie Image
+		///</summary>
+		[ImplementPropertyType("movieImage")]
+		public string MovieImage
+		{
+			get { return this.GetPropertyValue<string>("movieImage"); }
+		}
+
+		///<summary>
 		/// Review
 		///</summary>
 		[ImplementPropertyType("review")]
 		public IHtmlString Review
 		{
 			get { return this.GetPropertyValue<IHtmlString>("review"); }
+		}
+
+		///<summary>
+		/// score
+		///</summary>
+		[ImplementPropertyType("score")]
+		public int Score
+		{
+			get { return this.GetPropertyValue<int>("score"); }
 		}
 
 		///<summary>
