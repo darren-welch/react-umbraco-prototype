@@ -51,9 +51,9 @@ namespace Umbraco_BE
             var oAuthServerOptions = new OAuthAuthorizationServerOptions()
             {
                 //generally you wouldn't allow this unless on SSL!
-#if DEBUG
+//#if DEBUG
                 AllowInsecureHttp = true,
-#endif
+//#endif
                 
                 TokenEndpointPath = new PathString("/umbraco/oauth/token"),
                 //set as different auth type to not interfere with anyone doing this on the front-end

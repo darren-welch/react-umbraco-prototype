@@ -38,7 +38,7 @@ class App extends Component {
   }
 
   getHomeContent(token) {
-    fetch("http://localhost:65173/umbraco/rest/v1/content", {
+    fetch("http://umbraco-react-be.azurewebsites.net/umbraco/rest/v1/content", {
       method: "get",
       headers: {
         Authorization: "Bearer " + token,

@@ -29,7 +29,7 @@ class BlogList extends Component {
   }
 
   getMovies(token, nodeid) {
-    fetch("http://localhost:65173/umbraco/rest/v1/content/1071/children", {
+    fetch("http://umbraco-react-be.azurewebsites.net/umbraco/rest/v1/content/1071/children", {
       method: "get",
       headers: {
         Authorization: "Bearer " + token,

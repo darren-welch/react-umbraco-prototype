@@ -1,0 +1,26 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 12 November 2018 14:51:11
+   Source : C:\Users\dwelc\Documents\Gitlab\React-Umbraco\Umbraco-BE\Umbraco-BE\Umbraco\
+     Dest : C:\Users\dwelc\Documents\Gitlab\React-Umbraco\Umbraco-BE\Umbraco-BE\App_Data\NuGetBackup\20181112-145111\Umbraco\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	C:\Users\dwelc\Documents\Gitlab\React-Umbraco\Umbraco-BE\Umbraco-BE\Umbraco\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         0         0         0         0         0         0
+   Bytes :         0         0         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : 12 November 2018 14:51:12
+

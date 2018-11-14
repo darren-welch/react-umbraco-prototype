@@ -7,7 +7,7 @@ export const getAccessToken = () => {
     password
   };
 
-  const authUrl = "http://localhost:65173/umbraco/oauth/token";
+  const authUrl = "http://umbraco-react-be.azurewebsites.net/umbraco/oauth/token";
 
   return new Promise((resolve, reject) => {
     return fetch(authUrl, {
